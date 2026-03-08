@@ -56,6 +56,10 @@
       },
       "scripts": {
           "dev": "vite",
-          "build": "vite build"
+          "build": "vite build",
+          "build:doganconsult": "SITE=doganconsult vite build --config vite.sites.config.ts",
+          "build:doganlab": "SITE=doganlab vite build --config vite.sites.config.ts",
+          "build:doganhub": "SITE=doganhub vite build --config vite.sites.config.ts",
+          "build:all": "npm run build:doganconsult && npm run build:doganlab && npm run build:doganhub"
       }
   }
